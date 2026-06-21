@@ -135,4 +135,4 @@ function Postform({post}) {
   )
 }
 
-export default Postform
+export default Postform;
