@@ -4,6 +4,7 @@ import './App.css'
 import authService from './appwrite/auth'
 import { login, logout } from "./store/authSlice"
 import { Header, Footer } from './components'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
         <main>
 
           {/* React Router Outlet will render pages here */}
-          Todo : {/* <Outlet /> */}
+          Todo : <Outlet />
 
         </main>
 

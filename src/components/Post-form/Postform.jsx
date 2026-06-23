@@ -30,7 +30,7 @@ function Postform({ post }) {
 
   // Get logged-in user from Redux
   const userData = useSelector(
-    state => state.user.userData
+    state => state.auth.userData
   );
   // Form submit function
   const submit = async(data)=>{

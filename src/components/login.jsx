@@ -101,7 +101,7 @@ function Login() {
                         {/* Email Field */}
                         <Input
                             label='Email'
-                            Placeholder='Enter your email'
+                            placeholder='Enter your email'
                             type='email'
 
 
@@ -122,7 +122,7 @@ function Login() {
                         <Input
                             label='Password'
                             type='password'
-                            Placeholder='Enter your password'
+                            placeholder='Enter your password'
 
                             {...register('password', {
                                 required: true,
