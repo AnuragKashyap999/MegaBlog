@@ -37,14 +37,10 @@ function Login() {
                 // Fetch current user details
                 const userdata = await authService.getCurrentUser()
 
-                if (userdata) {
+                 if (userdata) dispatch(authLogin(userData))
 
-                    // Save user data in Redux store
-                    dispatch(authLogin(userdata))
-                }
-
-                // Redirect to Home page
-                navigate('/')
+                 // Redirect to Home page
+                 navigate('/')
             }
 
         } catch (error) {
@@ -143,6 +139,5 @@ function Login() {
         </div>
     )
 }
-
 export default Login
 
