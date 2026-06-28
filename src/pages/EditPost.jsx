@@ -23,7 +23,6 @@ function EditPost() {
     <div className='py-8'>
       <Container>
         <Postform post={post}/>
-      
       </Container>
     </div>
   ) : null

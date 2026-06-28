@@ -5,7 +5,6 @@ import  {Container ,PostCard}  from '../components'
 function AllPosts() {
     const [posts,setPosts] =useState([])
     useEffect(()=>{
-
     },[])
     appwriteSrvice.getPosts([]).then((posts)=>{
         if(posts){
@@ -21,12 +20,9 @@ function AllPosts() {
                         <Postcard post={post} />
                     </div>
                 ))}
-
             </div>
         </Container>
-      
     </div>
   )
 }
-
 export default AllPosts
