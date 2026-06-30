@@ -18,11 +18,9 @@ function App() {
   useEffect(() => {
 
     // Check if user is already logged in
-    authService.getCurrentUser()
-
-      .then((userData) => {
-
-        // If user data exists, save it in Redux store
+   authService.getCurrentUser()
+   .then((userData) => {
+     // If user data exists, save it in Redux store
         if (userData) {
           dispatch(login({ userData }))
         }

@@ -35,9 +35,9 @@ function Login() {
             if (session) {
 
                 // Fetch current user details
-                const userdata = await authService.getCurrentUser()
+                const userData = await authService.getCurrentUser()
 
-                 if (userdata) dispatch(authLogin(userData))
+                 if (userData) dispatch(authLogin({userData}))
 
                  // Redirect to Home page
                  navigate('/')
